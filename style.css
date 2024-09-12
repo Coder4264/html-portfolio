@@ -1,0 +1,223 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+    
+}
+.user-pic img{
+    width: 600px;
+    height: 500px;
+    border-radius: 35% 65% 71% 29% / 52% 40% 60% 48%;
+}
+.user-pic{
+}
+
+.user-data h1, h3{
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+    padding: 20px 0px;
+}
+.user-data h4, p{
+    font-size: 24px;
+    font-weight: 300;
+}
+.user-profile{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    align-items:center;
+    background: url("https://media.istockphoto.com/id/1027112894/photo/gray-wall-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=PQIjiNaBIsGCb1bKbF1FrsqExN_3Q_Ue3xd8XDHbXxo=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    color: rgb(255, 242, 0);
+}
+.logo-1{
+    color: green;
+}
+a{
+    color: black;
+}
+.skills-container{
+    width: 80%;
+    margin: auto;
+}
+.skill-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.skill{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    height: 170px;
+    border-radius: 10px;
+    background-color: rgb(233, 232, 232);
+}
+.skill:hover{
+    background-color: rgb(211, 207, 207);
+}
+.skill p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.skill img{
+    width: 70px;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 30px;
+    padding: 20px;
+
+}
+.btn-1{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.btn-2{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+}
+.about-container{
+    width: 80%;
+    margin: auto;
+}
+.about-container p{
+    font-size: 20px;
+}
+.services-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    column-gap: 150px;
+    row-gap: 50px;
+    margin-top: 100px;
+    
+}
+.services h3{
+    font-size: 20px;
+}
+.services p{
+    font-size: 16px;
+}
+.services{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.service-centent{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.service-centent h3, p{
+    margin: 0px;
+    padding: 0px;
+}
+.about-text{
+    font-family: sans-serif;
+    font-weight:normal;
+}
+.project h3{
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+.project p{
+    font-size: 16px;
+}
+.project {
+    width: 350px;
+    border: 1px solid rgb(200, 195, 195);
+    box-shadow: 1px 1px 10px rgb(210, 211, 210);
+    margin-bottom: 50px;
+    padding: 7px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't overflow outside the border */
+    transition: all 0.3s ease-in-out;
+}
+.project::after{
+    content: "";
+    position: absolute;
+    z-index: 0s;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: white;
+    filter: blur(100px);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+    
+}
+.project::before{
+    content: "Click To View";
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: black;
+    opacity: 0;
+    z-index: 1;
+}
+.project:hover::after{
+    opacity: 1;
+}
+
+.project:hover::before{
+    opacity: 1;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 207, 207);
+    padding: 20px;
+    border-radius: 7px;
+}
+.foot{
+    background-color: rgb(211, 207, 207);
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.foot p{
+    font-size: 20px;
+    margin: 20px 0px 5px 0px;
+}
+
